@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { State } from '../../reducers';
 import {
     CharacterHealthContainer,
     CharacterHealthIndicatorContainer,
@@ -15,7 +16,7 @@ interface CharacterHealthProps {
 const CharacterHealth = (props: CharacterHealthProps) => {
     const { order } = props;
     const health = props.health < 0 ? 0 : props.health;
-    const { player, monster } = useSelector((state: any) => state);
+    const { player, monster } = useSelector((state: State) => state);
     const playerResult = player.result;
     const monsterResult = monster.result;
 

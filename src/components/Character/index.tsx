@@ -3,6 +3,7 @@ import CharacterHealth from '../CharacterHealth';
 import ReactDice from 'react-dice-complete';
 import 'react-dice-complete/dist/react-dice-complete.css';
 import { useDispatch, useSelector } from 'react-redux';
+import { State } from '../../reducers';
 import { monsterRoll, endTurn } from '../../reducers/game/actions';
 
 import { 
@@ -26,7 +27,7 @@ interface DiceRef extends MutableRefObject<null> {
 
 const Character = ({ image, order }: CharacterProps) => {
     const dispatch = useDispatch();
-    const { health, isRolling } = useSelector((state: any) => state[order ? 'monster' : 'player'])
+    const { health, isRolling } = useSelector((state: State) => state[order ? 'monster' : 'player'])
     let diceRef = useRef<any>({ rollAll: () => ({}) });
 
     useEffect(() => {

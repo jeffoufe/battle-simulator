@@ -1,3 +1,5 @@
+import { State } from '..';
+import { GameReducerAction } from './types';
 import {
   PLAYER_ROLL,
   MONSTER_ROLL,
@@ -19,7 +21,7 @@ export const INITIAL_STATE = {
   monster: CHARACTER_INITIAL_STATE
 }
 
-export default (state = INITIAL_STATE, action: any) => {
+export default (state: State = INITIAL_STATE, action: GameReducerAction) => {
   switch (action.type) {
     case PLAYER_ROLL:
       return {
@@ -59,7 +61,7 @@ export default (state = INITIAL_STATE, action: any) => {
         ...state,
         [character]: {
           ...state[character],
-          health: state[character].health - (Math.abs(damage * 10))
+          health: state[character].health - (Math.abs(damage))
         }
       }
     case RESET_TURN:

@@ -1,5 +1,7 @@
-import { ALL_ROLLS_DONE, END_TURN, RESET_TURN, COMPUTE_TURN } from './constants';
+import { END_TURN } from './constants';
+import { allRollsDone, computeTurn, resetTurn} from './actions';
 import { takeEvery, put, select, delay } from 'redux-saga/effects';
+import { State } from '..';
 
 interface EndTurnAction {
     payload: {
@@ -7,29 +9,20 @@ interface EndTurnAction {
     }
 }
 
-function* endTurn(action: EndTurnAction) {
+// For the tests
+export const stateSelector = (state: State) => state;
+
+export function* endTurn(action: EndTurnAction) {
     const { result } = action.payload;
-    yield put({
-        type: ALL_ROLLS_DONE,
-        payload: { result }
-    })
-    const playerResult = select((state: any) => state.player.result);
-    const monsterResult = select((state: any) => state.monster.result);
-    if (playerResult === monsterResult) {
+    yield put(allRollsDone(result))
+    const { player, monster } = yield select(stateSelector);
+    if (player.result === monster.result) {
         yield delay(1000);
-        yield put({
-            type: RESET_TURN
-        });
+        yield put(resetTurn());
     } else {
-        const order = playerResult < monsterResult;
-        yield put({
-            type: COMPUTE_TURN,
-            payload: { order }
-        })
+        yield put(computeTurn())
         yield delay(1000);
-        yield put({
-            type: RESET_TURN
-        });
+        yield put(resetTurn());
     }
 }   
 

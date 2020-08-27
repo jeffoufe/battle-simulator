@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { State } from '../../reducers';
 import { clickAttack, resetGame } from '../../reducers/game/actions';
 import {
     ActionsContainer,
@@ -11,7 +12,7 @@ import {
 
 const Actions = () => {
     const dispatch = useDispatch();
-    const { isTurnActive, player, monster } = useSelector((state: any) => state);
+    const { isTurnActive, player, monster } = useSelector((state: State) => state);
     const playerResult = player.result;
     const monsterResult = monster.result;
     const isGameFinished = player.health <= 0 || monster.health <= 0;
