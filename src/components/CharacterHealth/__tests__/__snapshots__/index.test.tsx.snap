@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterHealth Dices rolled 1`] = `
+<CharacterHealthContainer>
+  <CharacterHealthPoints>
+    -2
+  </CharacterHealthPoints>
+  <CharacterHealthIndicatorContainer>
+    <CharacterHealthIndicator
+      health={50}
+    />
+  </CharacterHealthIndicatorContainer>
+  <CharacterHealthPoints>
+    50
+  </CharacterHealthPoints>
+</CharacterHealthContainer>
+`;
+
+exports[`CharacterHealth No dices rolled 1`] = `
+<CharacterHealthContainer>
+  <CharacterHealthPoints />
+  <CharacterHealthIndicatorContainer>
+    <CharacterHealthIndicator
+      health={50}
+    />
+  </CharacterHealthIndicatorContainer>
+  <CharacterHealthPoints>
+    50
+  </CharacterHealthPoints>
+</CharacterHealthContainer>
+`;

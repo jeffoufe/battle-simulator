@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Actions Components ActionsContainer 1`] = `
+<div
+  className="sc-AxjAm dRhhVH"
+>
+  ActionsContainer
+</div>
+`;
+
+exports[`Actions Components ActionsInfo 1`] = `
+<p
+  className="sc-AxirZ dEBbzp"
+>
+  ActionsInfo
+</p>
+`;
+
+exports[`Actions Components AttackButton Snapshot 1`] = `
+<button
+  className="sc-AxhUy fOyfqh"
+  onClick={[MockFunction]}
+>
+  AttackButton
+</button>
+`;
+
+exports[`Actions Components GameOver 1`] = `
+<p
+  className="sc-AxirZ sc-AxiKw jcmCxV"
+>
+  GameOver
+</p>
+`;
+
+exports[`Actions Components Victory 1`] = `
+<p
+  className="sc-AxirZ sc-AxhCb ewOrJJ"
+>
+  GameOver
+</p>
+`;

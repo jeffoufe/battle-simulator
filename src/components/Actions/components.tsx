@@ -39,3 +39,9 @@ export const AttackButton = styled.button`
         font-size: 1.5em;
     }
 `
+
+ActionsContainer.displayName = 'ActionsContainer';
+ActionsInfo.displayName = 'ActionsInfo';
+GameOver.displayName = 'GameOver';
+Victory.displayName = 'Victory';
+AttackButton.displayName = 'AttackButton';

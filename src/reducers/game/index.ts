@@ -7,13 +7,13 @@ import {
   RESET_GAME
 } from './constants';
 
-const CHARACTER_INITIAL_STATE = {
+export const CHARACTER_INITIAL_STATE = {
   health: 100,
   result: 0,
   isRolling: false
 };
 
-const INITIAL_STATE = {
+export const INITIAL_STATE = {
   isTurnActive: false,
   player: CHARACTER_INITIAL_STATE,
   monster: CHARACTER_INITIAL_STATE

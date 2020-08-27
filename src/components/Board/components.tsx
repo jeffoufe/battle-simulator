@@ -16,3 +16,5 @@ export const BoardContainer = styled.div`
     }
   }
 `
+
+BoardContainer.displayName = 'BoardContainer';

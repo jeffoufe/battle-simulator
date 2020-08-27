@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Actions Dices drawn - Monster Hits 1`] = `
+<ActionsContainer>
+  <ActionsInfo>
+    You Are Hit For 1
+  </ActionsInfo>
+</ActionsContainer>
+`;
+
+exports[`Actions Dices drawn - Monster Hits 2`] = `
+<ActionsContainer>
+  <ActionsInfo>
+    Draw Turn
+  </ActionsInfo>
+</ActionsContainer>
+`;
+
+exports[`Actions Dices drawn - Player Hits 1`] = `
+<ActionsContainer>
+  <ActionsInfo>
+    You Hit For 3
+  </ActionsInfo>
+</ActionsContainer>
+`;
+
+exports[`Actions Game Over 1`] = `
+<ActionsContainer>
+  <GameOver>
+    Game Over
+  </GameOver>
+  <AttackButton
+    onClick={[Function]}
+  >
+    Reset
+  </AttackButton>
+</ActionsContainer>
+`;
+
+exports[`Actions Game start 1`] = `
+<ActionsContainer>
+  <AttackButton
+    onClick={[Function]}
+  >
+    Attack!
+  </AttackButton>
+</ActionsContainer>
+`;
+
+exports[`Actions Victory 1`] = `
+<ActionsContainer>
+  <Victory>
+    You Win
+  </Victory>
+  <AttackButton
+    onClick={[Function]}
+  >
+    Reset
+  </AttackButton>
+</ActionsContainer>
+`;

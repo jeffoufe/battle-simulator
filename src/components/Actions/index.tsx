@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { PLAYER_ROLL, RESET_GAME } from '../../reducers/game/constants';
+import { clickAttack, resetGame } from '../../reducers/game/actions';
 import {
     ActionsContainer,
     AttackButton,
@@ -17,14 +17,8 @@ const Actions = () => {
     const isGameFinished = player.health <= 0 || monster.health <= 0;
     const damage = player.result - monster.result;
 
-
-    const onClickAttack = () => dispatch({
-        type: PLAYER_ROLL
-    })
-
-    const onResetGame = () => dispatch({
-        type: RESET_GAME
-    })
+    const onClickAttack = () => dispatch(clickAttack());
+    const onResetGame = () => dispatch(resetGame());
 
     return (
         <ActionsContainer>

@@ -34,5 +34,6 @@ function* endTurn(action: EndTurnAction) {
 }   
 
 export function* watchEndTurn() {
+    // @ts-ignore
     yield takeEvery(END_TURN, endTurn);
 }

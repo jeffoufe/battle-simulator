@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  className="sc-AxhUy hwArws"
+  order={0}
+>
+  CharacterName
+</div>
+`;
+
+exports[`Actions Components CharacterContainer 1`] = `
+<div
+  className="sc-AxjAm hrWJGs"
+  order={0}
+>
+  ActionsContainer
+</div>
+`;
+
+exports[`Actions Components CharacterImage 1`] = `
+<img
+  className="sc-AxhCb gSjfUP"
+  src="coucou"
+>
+  GameOver
+</img>
+`;
+
+exports[`Actions Components CharacterImage 2`] = `
+<div
+  className="sc-AxgMl deTFtb"
+  order={0}
+/>
+`;
+
+exports[`Actions Components CharacterInfo 1`] = `
+<div
+  className="sc-AxiKw hCvifY"
+  order={0}
+>
+  GameOver
+</div>
+`;
+
+exports[`Actions Components CharacterInfoDice 1`] = `
+<div
+  className="sc-AxirZ dLnpgW"
+  order={0}
+>
+  ActionsInfo
+</div>
+`;

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterHealth Components CharacterHealthContainer 1`] = `
+<div
+  className="sc-AxjAm eYcNGP"
+/>
+`;
+
+exports[`CharacterHealth Components CharacterHealthIndicator 1`] = `
+<div
+  className="sc-AxiKw ldBGmk"
+/>
+`;
+
+exports[`CharacterHealth Components CharacterHealthIndicatorContainer 1`] = `
+<div
+  className="sc-AxirZ chhwUe"
+/>
+`;
+
+exports[`CharacterHealth Components CharacterHealthPoints 1`] = `
+<span
+  className="sc-AxhCb gYqkZJ"
+>
+  5
+</span>
+`;

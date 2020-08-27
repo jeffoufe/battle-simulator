@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Title 1`] = `
+<h1
+  className="sc-AxjAm iRpSIr"
+>
+  Title
+</h1>
+`;

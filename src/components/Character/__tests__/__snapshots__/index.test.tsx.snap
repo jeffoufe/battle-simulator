@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Actions Monster attacks 1`] = `
+<CharacterContainer
+  order={1}
+>
+  <CharacterName
+    order={1}
+  >
+    Monster
+  </CharacterName>
+  <CharacterInfoDice
+    order={1}
+  >
+    <CharacterInfo
+      order={1}
+    >
+      <CharacterImage
+        src="image"
+      />
+      <CharacterHealth
+        health={100}
+        order={1}
+      />
+    </CharacterInfo>
+    <CharacterDice
+      order={1}
+    >
+      <ForwardRef
+        defaultRoll={4}
+        dieSize={30}
+        disableIndividual={false}
+        dotColor="#000000"
+        faceColor="#FFFFFF"
+        margin={15}
+        numDice={2}
+        outline={true}
+        outlineColor="#000000"
+        rollDone={[Function]}
+        rollTime={1}
+        sides={6}
+      />
+    </CharacterDice>
+  </CharacterInfoDice>
+</CharacterContainer>
+`;
+
+exports[`Actions Player attacks 1`] = `
+<CharacterContainer
+  order={0}
+>
+  <CharacterName
+    order={0}
+  >
+    Player
+  </CharacterName>
+  <CharacterInfoDice
+    order={0}
+  >
+    <CharacterInfo
+      order={0}
+    >
+      <CharacterImage
+        src="image"
+      />
+      <CharacterHealth
+        health={100}
+        order={0}
+      />
+    </CharacterInfo>
+    <CharacterDice
+      order={0}
+    >
+      <ForwardRef
+        defaultRoll={4}
+        dieSize={30}
+        disableIndividual={false}
+        dotColor="#000000"
+        faceColor="#FFFFFF"
+        margin={15}
+        numDice={2}
+        outline={true}
+        outlineColor="#000000"
+        rollDone={[Function]}
+        rollTime={1}
+        sides={6}
+      />
+    </CharacterDice>
+  </CharacterInfoDice>
+</CharacterContainer>
+`;

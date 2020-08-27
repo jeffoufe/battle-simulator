@@ -80,3 +80,10 @@ export const CharacterDice = styled.div`
         }
     }
 `
+
+CharacterContainer.displayName = 'CharacterContainer';
+CharacterInfoDice.displayName = 'CharacterInfoDice';
+CharacterDice.displayName = 'CharacterDice';
+CharacterName.displayName = 'CharacterName';
+CharacterImage.displayName = 'CharacterImage';
+CharacterInfo.displayName = 'CharacterInfo';

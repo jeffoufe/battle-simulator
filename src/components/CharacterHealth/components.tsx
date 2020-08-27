@@ -30,6 +30,7 @@ export const CharacterHealthIndicator = styled.div`
     width: 40px;
     height: ${(props: CharacterHealthIndicatorProps) => props.health}%;
     background-color: ${(props: CharacterHealthIndicatorProps) => getHealthColor(props.health)};
+    transition: height 0.5s ease;
     position: absolute;
     bottom: 0;
 `
@@ -38,4 +39,10 @@ export const CharacterHealthPoints = styled.span`
     margin-top: 5px;
     margin-bottom: 0;
     text-align: center;
+    min-height: 20px;
 `
+
+CharacterHealthContainer.displayName = 'CharacterHealthContainer'
+CharacterHealthIndicatorContainer.displayName = 'CharacterHealthIndicatorContainer'
+CharacterHealthIndicator.displayName = 'CharacterHealthIndicator'
+CharacterHealthPoints.displayName = 'CharacterHealthPoints'
