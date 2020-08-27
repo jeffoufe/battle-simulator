@@ -10,10 +10,19 @@ export const ActionsContainer = styled.div`
 
 export const ActionsInfo = styled.p`
     font-size: 1em;
+    text-transform: uppercase;
 
     @media only screen and (min-width: ${breakpoints.tablet}) {
         font-size: 1.5em;
     }
+`
+
+export const GameOver = styled(ActionsInfo)`
+    color: red;
+`
+
+export const Victory = styled(ActionsInfo)`
+    color: green;
 `
 
 export const AttackButton = styled.button`

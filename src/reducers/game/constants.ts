@@ -1,3 +1,7 @@
-export const ATTACK = 'GAME/ATTACK';
-export const ATTACK_LOADING = 'GAME/ATTACK_LOADING';
-export const ATTACK_SUCCESS = 'GAME/ATTACK_SUCCESS';
+export const PLAYER_ROLL = 'GAME/PLAYER_ROLL';
+export const MONSTER_ROLL = 'GAME/MONSTER_ROLL';
+export const ALL_ROLLS_DONE = 'GAME/ALL_ROLLS_DONE';
+export const RESET_TURN = 'GAME/RESET_TURN';
+export const END_TURN = 'GAME/END_TURN';
+export const COMPUTE_TURN = 'GAME/COMPUTE_TURN';
+export const RESET_GAME = 'GAME/RESET_GAME';

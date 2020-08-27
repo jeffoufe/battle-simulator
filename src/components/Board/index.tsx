@@ -1,19 +1,24 @@
-import styled from 'styled-components';
-import { breakpoints } from '../../constants';
+import React from 'react';
+import { BoardContainer } from './components';
+import { Title, Character, Actions } from '..';
+import WARRIOR_IMAGE from '../../assets/warrior.png';
+import MONSTER_IMAGE from '../../assets/monster.png';
 
-const Board = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: calc(100vh - 60px);
+const Board = () => (
+  <>
+    <Title>Battle Simulator</Title>
+    <BoardContainer>
+      <Character
+        image={WARRIOR_IMAGE}
+        order={0}
+      />
+      <Actions />
+      <Character
+        image={MONSTER_IMAGE}
+        order={1}
+      />
+    </BoardContainer>
+  </>
+)
 
-  @media only screen and (min-width: ${breakpoints.tablet}) {
-    flex-direction: row;
-    align-items: center;
-
-    > div {
-        width: calc(100% / 3);
-    }
-  }
-`
-export default Board
+export default Board;
