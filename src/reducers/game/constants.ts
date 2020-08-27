@@ -1,0 +1,3 @@
+export const ATTACK = 'GAME/ATTACK';
+export const ATTACK_LOADING = 'GAME/ATTACK_LOADING';
+export const ATTACK_SUCCESS = 'GAME/ATTACK_SUCCESS';

@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import WARRIOR_IMAGE from './assets/warrior.png';
+import MONSTER_IMAGE from './assets/monster.png';
+import { Provider } from 'react-redux';
+import store from './store';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import {
+  Title,
+  Character,
+  Actions,
+  Board
+} from './components';
+
+const App = () => (
+  <Provider store={store}>
+    <Title>Battle Simulator</Title>
+    <Board>
+      <Character
+        image={WARRIOR_IMAGE}
+        health={50}
+        order={0}
+      />
+      <Actions />
+      <Character
+        image={MONSTER_IMAGE}
+        health={50}
+        order={1}
+      />
+    </Board>
+  </Provider>
+);
 
 export default App;
